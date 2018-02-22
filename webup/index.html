@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>WebUp #14</title>
+<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0, user-scalable=yes">
+<link rel="stylesheet" href="assets/css/master.css">
+<link rel="stylesheet" href="assets/css/sections.css">
+<style>
+    body {
+        background: url("assets/images/css/code.jpg") fixed;
+        background-size: cover;
+        overflow: auto
+    }
+    body::before {
+        content: "";
+        background: #c8c8c8;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        opacity: .9
+    }
+</style>
+
+<!-- NAVIGATION HELPER -->
+<span id=slide1></span>
+<span id=slide2></span>
+<span id=slide3></span>
+<span id=slide4></span>
+<span id=slide5></span>
+<span id=slide6></span>
+<span id=slide7></span>
+<span id=slide8></span>
+<span id=slide9></span>
+<span id=slide10></span>
+
+<!-- PROGRESS -->
+<div class=progress-bar></div>
+
+<!-- NAVIGATION -->
+<nav>
+    <ul>
+        <li>
+            <a href=#slide1 class=c1 accesskey=1 title="Slide 1"></a>
+        <li>
+            <a href=#slide2 class=c2 accesskey=2 title="Slide 2"></a>
+        <li>
+            <a href=#slide3 class=c3 accesskey=3 title="Slide 3"></a>
+        <li>
+            <a href=#slide4 class=c4 accesskey=4 title="Slide 4"></a>
+        <li>
+            <a href=#slide5 class=c5 accesskey=5 title="Slide 5"></a>
+        <li>
+            <a href=#slide6 class=c6 accesskey=6 title="Slide 6"></a>
+        <li>
+            <a href=#slide7 class=c7 accesskey=7 title="Slide 7"></a>
+        <li>
+            <a href=#slide8 class=c8 accesskey=8 title="Slide 8"></a>
+        <li>
+            <a href=#slide9 class=c9 accesskey=9 title="Slide 9"></a>
+        <li>
+            <a href=#slide10 class=c10 accesskey=0 title="Slide 10"></a>
+    </ul>
+</nav>
+
+<!-- SIGNATURE -->
+<p class=signature>github.com/weroro-sk</p>
+
+<!-- SECTIONS -->
+<section class=section1>
+    <input type=radio id=restarter class="child-btn active" name=previews checked>
+    <label for=restarter>R</label>
+    <input type=radio id=gif-image class="child-btn active" name=previews>
+    <label for=gif-image>gif</label>
+    <input type=radio id=frame-anim class="child-btn active" name=previews>
+    <label for=frame-anim>PM</label>
+    <div class=rocket>
+        <div class=rocket-body>
+            <div class=body></div>
+            <div class="fin fin-left"></div>
+            <div class="fin fin-right"></div>
+            <div class=window></div>
+        </div>
+        <div class=exhaust-flame></div>
+        <ul class=exhaust-fumes>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul class=star>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class=presentation-headline>
+        <h1>Interakcia v CSS</h1>
+        <span>WebUp #14</span>
+    </div>
+    <div class=gif-animation>
+        <img src="assets/images/css.gif" alt="">
+    </div>
+    <div class=iframe-animation>
+        <iframe src="frames/pacman.html"></iframe>
+    </div>
+</section>
+
+<section class=section2>
+    <input type=checkbox id=section-slide1 class="child-btn active">
+    <label for=section-slide1>s1</label>
+    <input type=checkbox id=section-slide2 class="child-btn active">
+    <label for=section-slide2>s2</label>
+    <input type=checkbox id=section-slide3 class="child-btn active">
+    <label for=section-slide3>s3</label>
+    <input type=checkbox id=section-slide4 class="child-btn active">
+    <label for=section-slide4>s4</label>
+    <input type=checkbox id=section-slide5 class="child-btn active">
+    <label for=section-slide5>s5</label>
+    <input type=checkbox id=section-slide6 class="child-btn active">
+    <label for=section-slide6>s6</label>
+    <div class="view types">
+        <h1>Dostupné :pseudotriedy a atribúty</h1>
+        <div>
+            :hover
+        </div>
+        <div>
+            :focus
+        </div>
+        <div>
+            :checked
+        </div>
+        <div>
+            :target
+        </div>
+        <div>
+            :active
+        </div>
+        <div>
+            accesskey
+        </div>
+    </div>
+</section>
+
+<section class=section3>
+    <div class=view>
+        <h1>Popisná bublinka</h1>
+        <div class="bubble-wrapper">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <span
+                        class=bubble tabindex=0 data-bubble="Text s popisom">aliquip</span> ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat <span
+                        class=bubble tabindex=0 data-bubble="Ďalší popis. :)">nulla</span> pariatur. <span
+                        class=bubble tabindex=0 data-bubble="Posledný popis.">Excepteur</span> sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+    <div class=code-preview>
+        <input type=checkbox id=code-area4>
+        <label for=code-area4
+               data-show="Zobraziť"
+               data-hide="Skryť"
+               data-default="kód"></label>
+        <div class=code-area>
+            <div data-type="html">
+                    <pre><span class=code
+                               spellcheck=false
+                               contenteditable=false>&lt;span class=bubble tabindex=0
+      data-bubble="Text s popisom"&gt;
+
+    :hover alebo :focus zobrazí bublinku
+
+&lt;/span&gt;</span></pre>
+            </div>
+            <div data-type="css">
+                    <pre><style class=code
+                                spellcheck=false
+                                contenteditable=true>.bubble::before {
+    content: attr(data-bubble)
+}</style></pre>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class=section4>
+    <div class=view>
+        <input type=checkbox id=iframe-width>
+        <label for=iframe-width data-min=320 data-max=800>Prepnúť na </label>
+        <div class=iframe>
+            <iframe src="frames/hamburger.html"></iframe>
+        </div>
+        <div class=code-preview>
+            <input type=checkbox id=code-area2>
+            <label for=code-area2
+                   data-show="Zobraziť"
+                   data-hide="Skryť"
+                   data-default="kód"></label>
+            <div class=code-area>
+                <div data-type="html">
+                    <pre><span class=code
+                               spellcheck=false
+                               contenteditable=false>&lt;input type=checkbox id=hamburger&gt;
+&lt;ul class=menu&gt;
+    &lt;li&gt;
+        &lt;a href="#"&gt;Položka 1&lt;/a&gt;
+    &lt;li&gt;
+        &lt;a href="#"&gt;Položka 2&lt;/a&gt;
+    &lt;li&gt;
+        &lt;a href="#"&gt;Položka 3&lt;/a&gt;
+    &lt;li&gt;
+        &lt;a href="#"&gt;Položka 4&lt;/a&gt;
+&lt;/ul&gt;
+&lt;label for=hamburger&gt;MENU&lt;/label&gt;</span></pre>
+                </div>
+                <div data-type="css">
+                    <pre><style class=code
+                                spellcheck=false
+                                contenteditable=false>nav > #hamburger,
+nav > label {
+    display: none
+}
+
+nav > #hamburger:checked + .menu {
+    display: block
+}</style></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class=section5>
+    <input type=radio id=accordion1 name=slide-radio class="child-btn active" checked=checked>
+    <label for=accordion1>s1</label>
+    <input type=radio id=accordion2 name=slide-radio class="child-btn active">
+    <label for=accordion2>s2</label>
+    <input type=radio id=accordion3 name=slide-radio class="child-btn active">
+    <label for=accordion3>s3</label>
+    <div class=view>
+        <div class=accordion id=accord-1>
+            <h1>Checkbox - Akordeon menu</h1>
+            <input type=checkbox id=opener1>
+            <label for=opener1 accesskey=a>Prvá položka</label>
+            <div class=content>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <input type=checkbox id=opener2>
+            <label for=opener2 accesskey=b>Druhá položka</label>
+            <div class=content>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+                    est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+                    veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
+                    commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+                    molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            </div>
+
+            <input type=checkbox id=opener3>
+            <label for=opener3 accesskey=c>Tretia položka</label>
+            <div class=content>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                    deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+                    provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
+                    fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
+                    est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
+                    voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis
+                    aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non
+                    recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus
+                    maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+            </div>
+            <div class=code-preview>
+                <input type=checkbox id=code-area5>
+                <label for=code-area5
+                       data-show="Zobraziť"
+                       data-hide="Skryť"
+                       data-default="kód"></label>
+                <div class=code-area>
+                    <div data-type="html">
+                    <pre><span class=code
+                               spellcheck=false
+                               contenteditable=false>&lt;input type="checkbox" id="check-open1"&gt;
+&lt;label for="check-open1" accesskey="a"&gt;
+    Prvá položka
+&lt;/label&gt;
+&lt;div class="content"&gt;
+    &lt;p&gt;Obsah&lt;/p&gt;
+&lt;/div&gt;</span></pre>
+                    </div>
+                    <div data-type="css">
+                    <pre><style class=code
+                                spellcheck=false
+                                contenteditable=true>input[type="checkbox"]:checked + label + .content {
+    height: 200px
+}</style></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=accordion id=accord-2>
+            <h1>Radio - Permanentný stav</h1>
+            <input type=radio id=perma-radio-opener1>
+            <label for=perma-radio-opener1 accesskey=d>Prvá položka</label>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <input type=radio id=perma-radio-opener2>
+            <label for=perma-radio-opener2 accesskey=e>Druhá položka</label>
+            <div class=content>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+                    est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+                    veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
+                    commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+                    molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            </div>
+            <input type=radio id=perma-radio-opener3>
+            <label for=perma-radio-opener3 accesskey=f>Tretia položka</label>
+            <div class=content>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                    deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+                    provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
+                    fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
+                    est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
+                    voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis
+                    aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non
+                    recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus
+                    maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+            </div>
+            <div class=code-preview>
+                <input type=checkbox id=code-area6>
+                <label for=code-area6
+                       data-show="Zobraziť"
+                       data-hide="Skryť"
+                       data-default="kód"></label>
+                <div class=code-area>
+                    <div data-type="html">
+                    <pre><span class=code
+                               spellcheck=false
+                               contenteditable=false>&lt;input type="radio" id="perma-radio-open1"&gt;
+&lt;label for="perma-radio-open1" accesskey="a"&gt;
+    Prvá položka
+&lt;/label&gt;
+&lt;div class="content"&gt;
+    &lt;p&gt;Obsah&lt;/p&gt;
+&lt;/div&gt;</span></pre>
+                    </div>
+                    <div data-type="css">
+                    <pre><style class=code
+                                spellcheck=false
+                                contenteditable=true>input[type="radio"]:checked + label + .content {
+    height: 200px
+}</style></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=accordion id=accord-3>
+            <h1>Radio - Prepínateľný stav</h1>
+            <input type=radio id=radio-opener1 name=radio>
+            <label for=radio-opener1 accesskey=g>Prvá položka</label>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <input type=radio id=radio-opener2 name=radio>
+            <label for=radio-opener2 accesskey="h">Druhá položka</label>
+            <div class=content>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+                    est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+                    veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
+                    commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+                    molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            </div>
+            <input type=radio id=radio-opener3 name=radio>
+            <label for=radio-opener3 accesskey=i>Tretia položka</label>
+            <div class=content>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                    deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+                    provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
+                    fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
+                    est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
+                    voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis
+                    aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non
+                    recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus
+                    maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+            </div>
+            <div class=code-preview>
+                <input type=checkbox id=code-area7>
+                <label for=code-area7
+                       data-show="Zobraziť"
+                       data-hide="Skryť"
+                       data-default="kód"></label>
+                <div class=code-area>
+                    <div data-type="html">
+                    <pre><span class=code
+                               spellcheck=false
+                               contenteditable=false>&lt;input type=radio id=radio-open1 name=radio&gt;
+&lt;label for=radio-open1 accesskey=a&gt;
+    Prvá položka
+&lt;/label&gt;
+&lt;div class=content&gt;
+    &lt;p&gt;Obsah&lt;/p&gt;
+&lt;/div&gt;
+&lt;input type=radio id=radio-open2 name=radio&gt;
+&lt;label for=radio-open2 accesskey=b&gt;
+    Druhá položka
+&lt;/label&gt;
+&lt;div class=content&gt;
+    &lt;p&gt;Obsah&lt;/p&gt;
+&lt;/div&gt;</span></pre>
+                    </div>
+                    <div data-type="css">
+                    <pre><style class=code
+                                spellcheck=false
+                                contenteditable=true>input[type="radio"]:checked + label + .content {
+    height: 200px
+}</style></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class=section6>
+    <div class=view>
+        <div class=iframe>
+            <iframe src="frames/css_lightbox.html"></iframe>
+        </div>
+        <div class=code-preview>
+            <input type=checkbox id=code-area3>
+            <label for=code-area3
+                   data-show="Zobraziť"
+                   data-hide="Skryť"
+                   data-default="kód"></label>
+            <div class=code-area>
+                <div data-type="html">
+                    <pre><span class=code
+                               spellcheck=false
+                               contenteditable=false>
+&lt;div class=css-lightbox&gt;
+    &lt;a href="#image-1"&gt;
+        &lt;img src="image_1_thumb.jpg" alt=""&gt;
+    &lt;/a&gt;
+    &lt;div id=image-1&gt;
+        &lt;a href="#"&gt;&lt;/a&gt;
+        &lt;div&gt;
+            &lt;img src="image_1_big.jpg" alt=""&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </span></pre>
+                </div>
+                <div data-type="css">
+                    <pre><style class=code
+                                spellcheck=false
+                                contenteditable=false>
+.css-lightbox > div[id^="image-"]:target {
+    display: block
+}
+                    </style></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class=section7>
+    <div class=view>
+        <h1>Ovládanie prvkov a animácií</h1>
+        <div class=active-animation>
+            <input type=checkbox id=switch>
+            <label for=switch>Prepnúť</label>
+            <input type=button id=push>
+            <label for=push>&bull;&bull;&bull;</label>
+            <hr>
+            <div class=sphere-stage>
+                <div class=sphere></div>
+            </div>
+        </div>
+        <div class=code-preview>
+            <input type=checkbox id=code-area8>
+            <label for=code-area8
+                   data-show="Zobraziť"
+                   data-hide="Skryť"
+                   data-default="kód"></label>
+            <div class=code-area>
+                <div data-type="html">
+                    <pre><span class=code
+                               spellcheck=false
+                               contenteditable=false>&lt;div class=active-animation&gt;
+    &lt;input type=checkbox id=switch&gt;
+    &lt;label for=switch&gt;Prepnúť&lt;/label&gt;
+    &lt;input type=button id=push&gt;
+    &lt;label for=push&gt;&bull;&bull;&bull;&lt;/label&gt;
+    &lt;hr&gt;
+    &lt;div class=sphere-stage&gt;
+        &lt;div class=sphere&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</span></pre>
+                </div>
+                <div data-type="css">
+                    <pre><style class=code
+                                spellcheck=false
+                                contenteditable=false>.active-animation > #push:active ~ .sphere-stage > .sphere,
+.active-animation > #switch:checked ~ .sphere-stage > .sphere {
+    animation-play-state: running;
+}
+
+.active-animation > #switch:checked ~ #push:active ~ .sphere-stage > .sphere {
+    animation-play-state: paused;
+}</style></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class=section8>
+    <div class=view>
+        <h1>Best practice</h1>
+        <hr>
+        <div class=best-wrapper>
+            <h2>:checked, :active</h2>
+            <pre class=code-sem>
+&lt;body&gt;
+    &lt;input id=input1&gt;
+    &lt;input id=input2&gt;
+
+    &lt;section&gt;
+        &lt;label for=input1&gt;&lt;/label&gt;
+        &lt;label for=input2&gt;&lt;/label&gt;
+            </pre>
+            <pre class=code-sem>
+&lt;body&gt;
+
+    &lt;section&gt;
+        &lt;input id=input1&gt;
+        &lt;label for=input1&gt;&lt;/label&gt;
+        &lt;input id=input2&gt;
+        &lt;label for=input2&gt;&lt;/label&gt;
+            </pre>
+        </div>
+        <div class=best-wrapper>
+            <h2>:target</h2>
+            <pre class=code-sem>
+&lt;body&gt;
+    &lt;span id=target1&gt;&lt;/span&gt;
+    &lt;span id=target2&gt;&lt;/span&gt;
+
+    &lt;section&gt;
+        &lt;a href=#target1&gt;&lt;/a&gt;
+        &lt;a href=#target2&gt;&lt;/a&gt;
+            </pre>
+            <pre class=code-sem>
+&lt;body&gt;
+
+    &lt;section&gt;
+        &lt;a href=#target1&gt;&lt;/a&gt;
+        &lt;div id=target1&gt;&lt;/div&gt;
+        &lt;a href=#target2&gt;&lt;/a&gt;
+        &lt;div id=target2&gt;&lt;/div&gt;
+            </pre>
+        </div>
+        <div class=swipe>
+            <h2>Swipe komponent</h2>
+            <span style="background-color: #fff;padding: .5em;font-size: 1.5em;
+    border-radius: .5em;display: inline-block;margin-top: .3em">-webkit-overflow-scrolling: touch;</span>
+        </div>
+    </div>
+</section>
+
+<section class=section9>
+    <div class=view>
+        <a href="frames/wolf.html" target=wolf>RESTART</a>
+        <div class=iframe>
+            <iframe src="frames/wolf.html" name=wolf style="height:615px"></iframe>
+        </div>
+    </div>
+</section>
+
+<section class=section10>
+    <div class="presentation-headline bye">
+        <h2>Ďakujem za pozornosť.</h2>
+        <h3>GIT REPO</h3>
+        <h1>github.com/weroro-sk</h1>
+    </div>
+</section>

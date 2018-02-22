@@ -1,0 +1,48 @@
+.accordion > input[type="checkbox"],
+.accordion > input[type="radio"] {
+    display: none
+}
+
+.accordion > input[type="checkbox"] + label,
+.accordion > input[type="radio"] + label {
+    display: block;
+    background: #186bbe;
+    color: #fff;
+    border-bottom: 2px solid #173d7a;
+    padding: .4em;
+    cursor: pointer
+}
+
+.accordion > input[type="checkbox"]:checked + label + .content,
+.accordion > input[type="radio"]:checked + label + .content {
+    height: 200px
+}
+
+.accordion > input[type="checkbox"]:checked + label,
+.accordion > input[type="radio"]:checked + label {
+    background: #1993eb
+}
+
+.accordion > input[type="checkbox"] + label:hover,
+.accordion > input[type="radio"] + label:hover {
+    background: #18539e
+}
+
+.accordion > label:nth-of-type(1) {
+    border-radius: .8em .8em 0 0
+}
+
+.accordion > .content > p {
+    padding: 1em;
+    height: 100%
+}
+
+.accordion > .content {
+    overflow: hidden;
+    border: 1px solid #1993eb;
+    border-top: none;
+    box-sizing: border-box;
+    height: 0;
+    will-change: height;
+    transition: height .5s
+}

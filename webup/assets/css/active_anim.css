@@ -1,0 +1,78 @@
+.active-animation {
+    --square-width: 5em;
+    --padding: .5em;
+    --stage-width: 100%
+}
+
+.active-animation > hr {
+    clear: both
+}
+
+.active-animation > input {
+    display: none
+}
+
+.active-animation > input + label {
+    float: right;
+    margin-right: .5em;
+    margin-bottom: 1em;
+    padding: .5em;
+    border: 1px solid;
+    border-radius: .6em
+}
+
+.active-animation > #push:active + label {
+    background: #ADFF2F
+}
+
+.active-animation > #switch:checked + label,
+.active-animation > #switch:checked ~ #push:active + label {
+    background: #ff6040
+}
+
+.active-animation > #push:active ~ .sphere-stage > .sphere,
+.active-animation > #switch:checked ~ .sphere-stage > .sphere {
+    animation-play-state: running
+}
+
+.active-animation > #switch:checked ~ #push:active ~ .sphere-stage > .sphere {
+    animation-play-state: paused
+}
+
+.active-animation > .sphere-stage {
+    box-sizing: border-box;
+    position: relative;
+    margin-top: var(--padding);
+    width: var(--stage-width);
+    height: calc(var(--square-width) + (var(--padding) * 2));
+    padding: var(--padding);
+    border-radius: var(--square-width);
+    background: #888;
+    border-bottom: .1em solid #ddd
+}
+
+.active-animation > .sphere-stage > .sphere {
+    position: absolute;
+    left: var(--padding);
+    top: var(--padding);
+    width: var(--square-width);
+    height: var(--square-width);
+    border-radius: 50%;
+    background: #000;
+    background: radial-gradient(circle at 1.3em 1.3em, #5cabff, #000);
+    will-change: left;
+    animation: sphere 2s infinite;
+    animation-play-state: paused
+}
+
+@keyframes sphere {
+    0% {
+        left: var(--padding)
+    }
+    50% {
+        left: calc(var(--stage-width) - var(--square-width) - var(--padding))
+    }
+    100% {
+        left: var(--padding)
+    }
+}

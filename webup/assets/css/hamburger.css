@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'PT Sans Narrow';
+    src: url('../fonts/pt-sans-narrow.ttf') format('truetype')
+}
+
+html, body, * {
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background: #eee url("../images/css/bg.png");
+}
+
+h1,
+p {
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 4em;
+    line-height: 1.1;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+nav,
+nav a {
+    color: #eee;
+}
+
+nav {
+    height: 40px;
+    width: 100%;
+    background-color: #333;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav a {
+    display: inline-block;
+    min-width: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+nav > #hamburger,
+nav > label {
+    display: none;
+}
+
+nav > label {
+    padding: 10px 0 10px 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+nav > #hamburger:checked + .menu {
+    display: block;
+}
+
+nav li:hover {
+    background-color: #444;
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2.8em;
+    }
+
+    nav {
+        height: auto;
+        border-bottom: 0;
+    }
+
+    nav > ul {
+        display: none;
+        height: auto;
+    }
+
+    nav li {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+        background-color: #333;
+        border-bottom: 1px solid #555;
+    }
+
+    nav a:hover {
+        background-color: #444;
+    }
+
+    nav > label {
+        position: relative;
+        display: block;
+        width: 100%;
+        background-color: #333;
+    }
+
+    nav > label:after {
+        content: "|||";
+        transform: rotate(-90deg);
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: -5px;
+        color: #fff;
+    }
+}

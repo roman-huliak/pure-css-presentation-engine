@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title>wolf</title>
+<link rel="stylesheet" href="../assets/css/wolf.css">
+
+<input type=button id=left>
+<input type=button id=turn-left>
+<input type=button id=forwards>
+<input type=button id=backwards>
+<input type=button id=right>
+<input type=button id=turn-right>
+
+<input type=radio name=guard id=guard>
+<input type=radio name=boss id=boss>
+
+<div class=controls>
+    <label class="button turn-left" for=turn-left>⟲</label>
+    <label class="button turn-right" for=turn-right>⟳</label>
+    <div class=controlsRight>
+        <div class=controlsLeft>
+            <label class="button left" for=left>&lt;</label>
+            <label class="button forwards" for=forwards>➤</label>
+            <label class="button backwards" for=backwards>&lt;</label>
+            <label class="button right" for=right>&gt;</label>
+        </div>
+    </div>
+</div>
+
+<div id=maze>
+    <label for=boss class=Appleboss></label>
+    <label for=guard class=Appleguard></label>
+    <div class=gun></div>
+    <div class=safariFix>
+        <div class="move rotateL">
+            <div class="move rotateR">
+                <div class="move walkF">
+                    <div class="move walkB">
+                        <div class="move walkL">
+                            <div class="move walkR">
+                                <div class=scene>
+                                    <div class="shape cuboid-4 cub-4">
+                                        <div class="face bk">
+                                            <div class=photon-shader></div>
+                                        </div>
+                                        <div class="face rt">
+                                            <div class="photon-shader flag"></div>
+                                        </div>
+                                        <div class="face bm">
+                                            <div class="photon-shader"></div>
+                                        </div>
+                                        <div class="face tp">
+                                            <div class="photon-shader"></div>
+                                        </div>
+                                    </div>
+                                    <div class="shape cuboid-5 cub-5">
+                                        <div class="face rt">
+                                            <div class="photon-shader"></div>
+                                        </div>
+                                        <div class="face lt">
+                                            <div class="photon-shader"></div>
+                                        </div>
+                                        <div class="face bm">
+                                            <div class="photon-shader"></div>
+                                        </div>
+                                        <div class="face tp">
+                                            <div class="photon-shader"></div>
+                                        </div>
+                                    </div>
+                                    <div class="shape cuboid-6 cub-6">
+                                        <div class="face ft">
+                                            <div class="photon-shader"></div>
+                                        </div>
+                                        <div class="face bk">
+                                            <div class="photon-shader"></div>
+                                        </div>
+                                        <div class="face bm">
+                                            <div class="photon-shader"></div>
+                                        </div>
+                                        <div class="face tp">
+                                            <div class="photon-shader"></div>
+                                        </div>
+                                    </div>
+                                    <div class="shape cuboid-7 cub-7">
+                                        <div class="face ft">
+                                            <div class="photon-shader flag"></div>
+                                        </div>
+                                        <div class="face lt">
+                                            <div class="photon-shader"></div>
+                                        </div>
+                                        <div class="face bm">
+                                            <div class="photon-shader"></div>
+                                        </div>
+                                        <div class="face tp">
+                                            <div class="photon-shader"></div>
+                                        </div>
+                                    </div>
+                                    <div class="shape cuboid-8 cub-8">
+                                        <div class="face bk">
+                                            <div class="photon-shader flag"></div>
+                                        </div>
+                                        <div class="face rt">
+                                            <div class="photon-shader"></div>
+                                        </div>
+                                        <div class="face lt">
+                                            <div class="photon-shader"></div>
+                                        </div>
+                                        <div class="face bm">
+                                            <div class="photon-shader"></div>
+                                        </div>
+                                        <div class="face tp">
+                                            <div class="photon-shader"></div>
+                                        </div>
+                                    </div>
+                                    <label class=guard for=guard></label>
+                                    <label class=boss for=boss></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,87 @@
+html {
+    margin: 40px;
+    background: #000;
+    font-size: 10px
+}
+
+.face-top:before {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    background: #000;
+    right: 6em;
+    top: 3em;
+    border-radius: 50%
+}
+
+.pacman:after, .face-top:before {
+    content: "";
+    display: block
+}
+
+.face-top, .pacman:after {
+    background: yellow;
+    height: 10em;
+    width: 20em;
+    animation: spin1 0.5s infinite linear
+}
+
+.face-top {
+    position: relative;
+    border-radius: 10em 10em 0 0
+}
+
+.pacman:after {
+    border-radius: 0 0 10em 10em;
+    animation-name: spin2
+}
+
+.feed {
+    margin-top: -18.5em;
+    margin-left: 1.5em;
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 30%;
+    animation: eat .5s linear 0s infinite
+}
+
+@keyframes spin1 {
+    0% {
+        transform: rotate(0deg)
+    }
+    50% {
+        transform: rotate(-30deg)
+    }
+}
+
+@keyframes spin2 {
+    0% {
+        transform: rotate(0deg)
+    }
+    50% {
+        transform: rotate(30deg)
+    }
+}
+
+@keyframes eat {
+    0% {
+        box-shadow: 10em 6.5em 0 0 white,
+        30em 6.5em 0 0 white,
+        50em 6.5em 0 0 white,
+        70em 6.5em 0 0 white,
+        90em 6.5em 0 0 white,
+        110em 6.5em 0 0 white,
+        130em 6.5em 0 0 white,
+        150em 6.5em 0 0 white
+    }
+    100% {
+        box-shadow: 0 6.5em 0 0 white,
+        10em 6.5em 0 0 white,
+        30em 6.5em 0 0 white,
+        50em 6.5em 0 0 white,
+        70em 6.5em 0 0 white,
+        90em 6.5em 0 0 white,
+        110em 6.5em 0 0 white,
+        130em 6.5em 0 0 white
+    }
+}

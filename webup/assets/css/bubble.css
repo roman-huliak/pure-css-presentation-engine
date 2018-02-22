@@ -1,0 +1,38 @@
+.bubble {
+    position: relative;
+    cursor: help;
+    border-bottom: .1em solid #186bbe
+}
+
+.bubble::before, .bubble::after {
+    position: absolute;
+    left: 50%;
+    display: none;
+    z-index: 0
+}
+
+.bubble:hover::before, .bubble:hover::after,
+.bubble:focus::before, .bubble:focus::after {
+    display: block;
+    z-index: 10
+}
+
+.bubble::before {
+    background: #186bbe;
+    bottom: 175%;
+    width: 14em;
+    padding: .5em;
+    margin-left: -8em;
+    color: #fff;
+    border-radius: .4em;
+    content: attr(data-bubble)
+}
+
+.bubble::after {
+    content: "";
+    border-style: solid;
+    border-width: 1em .75em 0 .75em;
+    border-color: #186bbe transparent transparent transparent;
+    bottom: 100%;
+    margin-left: -1em
+}

@@ -1,0 +1,55 @@
+.css-lightbox > div[id^="image-"] {
+    display: none
+}
+
+.css-lightbox > div[id^="image-"]:target {
+    display: block
+}
+
+.css-lightbox > a {
+    display: inline-block;
+    height: 150px;
+    border: 3px solid #888
+}
+
+.css-lightbox > a:hover {
+    border-color: #D3D3D3
+}
+
+.css-lightbox > a > img,
+.css-lightbox > div > div > img {
+    display: block;
+    height: 100%
+}
+
+.css-lightbox > div,
+.css-lightbox > div > a {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0
+}
+
+.css-lightbox > div {
+    background-color: rgba(0, 0, 0, .7)
+}
+
+.css-lightbox > div > a {
+    cursor: default;
+    opacity: 0
+}
+
+.css-lightbox > div > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%
+}
+
+.css-lightbox > a,
+.css-lightbox > div > div {
+    box-shadow: 1px 11px 26px -12px rgba(0, 0, 0, 0.8)
+}
